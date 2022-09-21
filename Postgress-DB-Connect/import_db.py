@@ -3,7 +3,7 @@ import psycopg2
 import xlrd
 
 conn = ''
-xlpath = r'H:\FullTextInformation.xlsx'
+xlpath = r'X:\FullTextInformation.xlsx'
 
 def main():
     conn = psycopg2.connect(user = "admin",
@@ -22,7 +22,6 @@ def main():
     VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
     '''
     basepath = r'H:\FullTextAttachments'
-#    missinglist = ''
     for r in range(1, sheet.nrows):
         print('--', str(sheet.cell(r,0).value))
         folder = str(sheet.cell(r,0).value)
