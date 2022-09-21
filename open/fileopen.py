@@ -17,6 +17,6 @@ result = re.sub(r"^\"\"\,([0-9]+\,)", "\\1", filecont, 0, re.MULTILINE)
 
 
 # filesaving
-file = open(r'D:\GitHub\Personal\Python-Programs\open\output.csv','w') 
+file = open(r'D:\GitHub\Personal\Python-Programs\open\fire.csv','w') 
 file.write(result)
-file.close() 
+file.close()
